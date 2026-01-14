@@ -7,7 +7,7 @@ class OutpostWorker (var name: String) {
         }
     var mood: Int =50
         get() = field+(energy/10)
-    var level: Int=1
+    var level: Int = 1
         private set
     fun work(){
         println("$name выполняет работу...")
