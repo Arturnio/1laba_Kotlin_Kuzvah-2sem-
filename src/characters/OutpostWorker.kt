@@ -1,3 +1,5 @@
+package characters
+
 class OutpostWorker (var name: String) {
     var maxEnergy: Int=100
         private set

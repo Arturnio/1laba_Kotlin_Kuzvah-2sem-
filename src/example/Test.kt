@@ -1,3 +1,5 @@
+package example
+
 var age : Int = 18
     set (value){
         if ((value > 0 ) and (value < 110))
@@ -33,7 +35,7 @@ fun main(){
     println("Id предмета: $id\nИмя: $name\nКоличество: $quantity\n")
 
     val denis: Person = Person("denis")
-//    val pavel: Human = Human("Pavel")
+//    val pavel: example.Human = example.Human("Pavel")
     val maksim: Human = Person("Denis")
 
 }
