@@ -3,6 +3,19 @@ var age : Int = 18
         if ((value > 0 ) and (value < 110))
             field = value
     }
+abstract class Human(val name: String){
+    abstract var age: Int
+    abstract fun hello()
+}
+
+class Person(name: String)  : Human(name){
+    override var age: Int = 1
+    override fun hello() {
+        println("My name is $name")
+    }
+}
+
+
 
 fun main(){
     println(age)
@@ -19,6 +32,10 @@ fun main(){
     val(id,name,quantity)=betterSword
     println("Id предмета: $id\nИмя: $name\nКоличество: $quantity\n")
 
+    val denis: Person = Person("denis")
+//    val pavel: Human = Human("Pavel")
+    val maksim: Human = Person("Denis")
+
 }
 data class Item(
     val id: Int,
@@ -31,3 +48,4 @@ data class Item(
     }
 
 }
+
